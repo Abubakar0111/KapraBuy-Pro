@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tabs
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+        drawable="@drawable/kaprabuy_home"
+        text="@string/home" />
+    <tab
+        drawable="@drawable/kaprabuy_notification"
+        text="@string/notification" />
+    <tab
+        drawable="@drawable/kaprabuy_add_post"
+        text="@string/add" />
+    <tab
+        drawable="@drawable/kaprabuy_saerch"
+        text="@string/search" />
+    <tab
+        drawable="@drawable/kaprabuy_profile"
+        text="@string/profile" />
+
+</Tabs>
