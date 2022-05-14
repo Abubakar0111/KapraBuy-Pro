@@ -8,4 +8,12 @@
     <string name="profile">Profile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AbuBakar">Abu Bakar</string>
+    <string name="student">Student</string>
+    <string name="todo">TODO</string>
+    <string name="_54">54</string>
+    <string name="_354">354</string>
+    <string name="create_a_story">Create a story</string>
+
+    <string name="Bakar">bakar</string>
 </resources>

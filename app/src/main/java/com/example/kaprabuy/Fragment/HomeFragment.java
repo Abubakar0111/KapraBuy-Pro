@@ -16,7 +16,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.kaprabuy.Adapter.DashboardAdapter;
 import com.example.kaprabuy.Adapter.StoryAdapter;
+import com.example.kaprabuy.Model.DasboardModel;
 import com.example.kaprabuy.Model.StoryModel;
 import com.example.kaprabuy.R;
 
@@ -28,7 +30,10 @@ public class HomeFragment extends Fragment {
 
     RecyclerView storyRV, dashboardRV;
     ArrayList<StoryModel> storyList;
-//    ArrayList<DashboardModel> dashboardList;
+   ArrayList<DasboardModel> dashboardList;
+
+   ArrayList<StoryModel> list;
+
     ImageView addStory;
 
     public HomeFragment() {
@@ -60,20 +65,23 @@ public class HomeFragment extends Fragment {
         storyRV.setAdapter(adapter);
 
         //Dashboard Recycler View
-//        dashboardRV = view.findViewById(R.id.dashboardRV);
-//        dashboardList = new ArrayList<>();
-//        dashboardList.add(new DashboardModel(R.drawable.hipster,R.drawable.new_hope,"New Hope","Traveler, life Lover","247","57","33"));
-//        dashboardList.add(new DashboardModel(R.drawable.dennis,R.drawable.dennis_kane,"Dennis Kane","Photographer","247","57","33"));
-//        dashboardList.add(new DashboardModel(R.drawable.nature1,R.drawable.nature,"Alicia ","Traveler, life Lover","247","57","33"));
-//        dashboardList.add(new DashboardModel(R.drawable.art,R.drawable.nature_dordogne,"Alicia ","Traveler, life Lover","247","57","33"));
-//        DashboardAdapter dashboardAdapter = new DashboardAdapter(dashboardList,getContext());
-//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-//        dashboardRV.setLayoutManager(linearLayoutManager);
-//        dashboardRV.addItemDecoration(new DividerItemDecoration(dashboardRV.getContext(), DividerItemDecoration.VERTICAL));
-//        dashboardRV.setNestedScrollingEnabled(false);
-//        dashboardRV.setAdapter(dashboardAdapter);
-//
-//
+      dashboardRV = view.findViewById(R.id.dashboardRV);
+       dashboardList= new ArrayList<>();
+
+   dashboardList.add(new DasboardModel(R.drawable.profile,R.drawable.new_hope,R.drawable.saved,"New Hope","Traveler, life Lover","247","57","33"));
+       dashboardList.add(new DasboardModel(R.drawable.dennis,R.drawable.dennis_kane,"Dennis Kane","Photographer","247","57","33"));
+      dashboardList.add(new DasboardModel(R.drawable.nature1,R.drawable.nature,"Alicia ","Traveler, life Lover","247","57","33"));
+       dashboardList.add(new DasboardModel(R.drawable.art,R.drawable.nature_dordogne,"Alicia ","Traveler, life Lover","247","57","33"));
+
+
+        DashboardAdapter dashboardAdapter = new DashboardAdapter(dashboardList,getContext());
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        dashboardRV.setLayoutManager(linearLayoutManager);
+   //   dashboardRV.addItemDecoration(new DividerItemDecoration(dashboardRV.getContext(), DividerItemDecoration.VERTICAL));
+        dashboardRV.setNestedScrollingEnabled(false);
+        dashboardRV.setAdapter(dashboardAdapter);
+
+
 //        addStory = view.findViewById(R.id.addStory);
 //        addStory.setOnClickListener(new View.OnClickListener() {
 //            @Override
