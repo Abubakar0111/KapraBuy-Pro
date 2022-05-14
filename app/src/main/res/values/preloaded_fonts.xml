@@ -2,7 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/alata</item>
-        <item>@font/alatsi</item>
-        <item>@font/baloo</item>
+        <item>@font/alaic</item>
+        <item>@font/bolo</item>
     </array>
 </resources>
